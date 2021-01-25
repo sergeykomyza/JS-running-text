@@ -5,7 +5,8 @@ let wrapBox = document.querySelector('.running__box'),
     let intervalId = setInterval(() => {
         move();
     }, 10);
-
+// начинаем анимацию текста с крайней правой стороны
+runningText.style.transform = 'translateX(' + wrapBoxWidth + 'px)';
 // функция работы бегущей строки
 function move() {
     /* получаем стили свойства transform у runningText. Они представлены в формате - matrix(1, 0, 0, 1, 0, 0) 
